@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>expenses chart component main</title>
+    <script src="./chartjs/dist/chart.umd.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <p>My balance</p>
+                <h3>$921.48</h3>
+            </div>
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="main">
+            <div class="header">
+                <h3>Spending - Last 7 days</h3>
+            </div>
+                <div class="chart-container">
+                    <div class="custom-tooltip" id="customTooltip"></div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            <div class="seperator"></div>
+            <div class="footer">
+                <div class="title">
+                    <p>Total this month</p>
+                    <h3>$478.33</h3>
+                </div>
+                <div class="adds">
+                    <h4>+2.4%</h4>
+                    <p>from last month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
